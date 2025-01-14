@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Cake Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="white" />
+                </svg>
+                Cake Shop
+            </div>
+            <ul class="navigation-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="shop-cakes">
+        <h2>Our Cakes</h2>
+        <ul>
+            {% for cake in cakes %}
+            <li class="card-large">
+                <img src="{{ cake['image'] }}" alt="{{ cake['name'] }}">
+                <ul>
+                    <li><h3>{{ cake['name'] }}</h3></li>
+                    <li><p>Price: ${{ cake['price'] }}</p></li>
+                    <li><button class="btn-filled-dark">Add to Cart</button></li>
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</body>
+</html>
