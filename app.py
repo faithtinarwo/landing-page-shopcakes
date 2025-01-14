@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+import os
+
 
 app = Flask(__name__)
 
@@ -20,4 +22,5 @@ def shop():
     return render_template('shop.html', cakes=cakes)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
