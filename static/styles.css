@@ -10,7 +10,7 @@
     --nav-card-size: 240px;
 
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    font: antialiased;
     scroll-behavior: smooth;
 }
 
@@ -358,7 +358,7 @@ footer {
 section.hero {
     /*    width: 100%;*/
     height: auto;
-    background: var(--brand-02) url('https://ouch-cdn2.icons8.com/hxxz5Qr551KY1597yq-mz9zWRTkAT-cob5eZ8UreBBo/rs:fit:368:338/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzcy/L2UxYjU4YWUwLTc3/YjQtNGQ1OC05NjJl/LWUzODQ1Y2IyYzBi/Ny5wbmc.png') no-repeat center right;
+    background: var(--brand-02) url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2NYi8Xi-Y-2R7Lq1BmEzCHQnPoE7I_jMDAdq9BMy7LyC-a9hztgrzw75BYg2RpmnAbWLrGFlLsZij3RGzk7y8QnVOxDhMs8KMaXTEKX9TvxqU67jV0aZXrIlFTLJ4bFGzE13iSICf5fCs/s1600-rw/chocolate_cupcakes_raspberry_buttercream6...jpg') no-repeat center right;
 
     display: flex;
     flex-direction: column;
